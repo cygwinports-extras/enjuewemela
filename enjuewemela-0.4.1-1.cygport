@@ -1,0 +1,17 @@
+inherit distutils
+
+
+HOMEPAGE="http://launchpad.net/enjuewemela"
+SRC_URI="http://launchpad.net/enjuewemela/trunk/${PV}/+download/${P}.tar.gz"
+
+src_install() {
+	cd ${B}
+	distutils_install
+
+	for i in 32x32 64x64 192x192
+	do
+		insinto /usr/share/icons/hicolor/${i}/apps
+		newins ${S}/enjuewemela/images/icon-${i}.png enjuewemela.png
+	done
+	make_desktop_entry enjuewemela Enjuewemela enjuewemela "Game;LogicGame"
+}
