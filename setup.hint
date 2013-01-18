@@ -1,7 +1,0 @@
-category: Games
-requires: libSDL-devel libSDL_mixer-devel python python-configglue python-numpy python-pyglet python-xdg
-sdesc: "Crazy gems game"
-ldesc: "Enjuewemela is yet another similar game to the popular 
-'Bejeweled' or 'Diamond Mine'. The game basics is to make alignment of 3 
-or more gems, both vertically or horizontally by swapping adjacent 
-gems."

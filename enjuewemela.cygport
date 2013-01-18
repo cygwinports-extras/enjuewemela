@@ -1,8 +1,17 @@
 inherit distutils
 
-
+NAME="enjuewemela"
+VERSION=0.4.1
+RELEASE=2
+CATEGORY="Games"
+SUMMARY="Crazy gems game"
+DESCRIPTION="Enjuewemela is yet another similar game to the popular 'Bejeweled'
+or 'Diamond Mine'. The game basics is to make alignment of 3 or more gems, both
+vertically or horizontally by swapping adjacent gems."
 HOMEPAGE="http://launchpad.net/enjuewemela"
 SRC_URI="http://launchpad.net/enjuewemela/trunk/${PV}/+download/${P}.tar.gz"
+
+REQUIRES="libSDL-devel libSDL_mixer-devel"
 
 src_install() {
 	cd ${B}
